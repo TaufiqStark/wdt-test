@@ -3,7 +3,7 @@ Langkah - langkah instal project
 
 * Clone dan install package menggunakan npm
 ```
-git clone {{ thisrepo }}
+git clone https://github.com/TaufiqStark/wdt-test.git
 cd wdt-test
 npm install
 ```
