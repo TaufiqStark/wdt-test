@@ -37,11 +37,11 @@ npm start
 
 ## Register
 Daftarkan akun sebelum melakukan login
-**Request:**
+#### Request:
 ```http
 POST https://wdt-rest-api.herokuapp.com/api/register
 ```
-**Credentials:**
+#### Credentials:
 ```json
 {
     "name": "Your name",
@@ -52,11 +52,11 @@ POST https://wdt-rest-api.herokuapp.com/api/register
 
 ## Login
 Login untuk mendapatkan token yang akan digunakan di header `Authorization` saat request yang membutuhkan authentication
-**Request:**
+#### Request:
 ```http
 POST https://wdt-rest-api.herokuapp.com/api/login
 ```
-**Credentials:**
+#### Credentials:
 ```json
 {
     "email": "email@gmail.com",
@@ -66,11 +66,11 @@ POST https://wdt-rest-api.herokuapp.com/api/login
 
 ## Request Reset Password
 Request link reset password
-**Request:**
+#### Request:
 ```http
 POST https://wdt-rest-api.herokuapp.com/api/reset-password
 ```
-**Credentials:**
+#### Credentials:
 ```json
 {
     "email": "email@gmail.com"
@@ -79,11 +79,11 @@ POST https://wdt-rest-api.herokuapp.com/api/reset-password
 
 ## Reset Password
 Reset password dari link yang di dapat
-**Request:**
+#### Request:
 ```http
 POST https://wdt-rest-api.herokuapp.com/api/reset-password/:id/:passId
 ```
-**Credentials:**
+#### Credentials:
 ```json
 {
     "password": "123456789"
@@ -92,7 +92,7 @@ POST https://wdt-rest-api.herokuapp.com/api/reset-password/:id/:passId
 
 ## Profile
 Mendapatkan informasi akun kita
-**Request:**
+#### Request:
 ```http
 GET https://wdt-rest-api.herokuapp.com/api/profile
 ```
