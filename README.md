@@ -211,7 +211,8 @@ DELETE /api/comments/:id
 ---
 
 ### Heroku Deploy
-Link: ```http
+Link: 
+```http
 https://wdt-rest-api.herokuapp.com
 ``` 
 
