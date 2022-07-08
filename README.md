@@ -31,8 +31,7 @@ sequelize db:seed:all
 ```
 npm start
 ```
-
-
+---
 # Documentation
 
 ## Register
@@ -95,4 +94,54 @@ Mendapatkan informasi akun kita
 #### Request:
 ```http
 GET https://wdt-rest-api.herokuapp.com/api/profile
+```
+
+## Get Posts
+Mendapatkan posts yang telah dibuat user
+#### Request:
+```http
+GET https://wdt-rest-api.herokuapp.com/api/posts
+```
+
+## Create Post
+Membuat post baru 
+#### Request:
+```http
+POST https://wdt-rest-api.herokuapp.com/api/posts
+```
+#### Credentials:
+```json
+{
+    "title": "Judul post",
+    "slug": "judul-post",
+    "body": "Lorem ipsum.."
+}
+```
+## Show Post
+Melihat detail post
+#### Request:
+```http
+GET https://wdt-rest-api.herokuapp.com/api/posts/:id
+```
+
+## Edit Post
+Mengedit post yang sudah ada
+#### Request:
+```http
+PUT | PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
+```
+#### Credentials:
+```json
+{
+    "title": "Judul post diubah",
+    "slug": "judul-post-diubah",
+    "body": "Lorem ipsum.. diubah juga"
+}
+```
+
+## Delete Post
+Menghapus post
+#### Request:
+```http
+DELETE https://wdt-rest-api.herokuapp.com/api/posts/:id
 ```

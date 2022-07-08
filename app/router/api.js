@@ -15,12 +15,14 @@ router.get('/posts', postController.paginate)
 router.post('/posts', postController.store)
 router.get('/posts/:id', postController.show)
 router.put('/posts/:id', postController.update)
+router.patch('/posts/:id', postController.update)
 router.delete('/posts/:id', postController.delete)
 
 router.get('/posts/:post/comments', commentController.paginate)
 router.post('/posts/:post/comments', commentController.store)
 router.get('/comments/:id', commentController.show)
 router.put('/comments/:id', commentController.update)
+router.patch('/comments/:id', commentController.update)
 router.delete('/comments/:id', commentController.delete)
 
 module.exports = router;
