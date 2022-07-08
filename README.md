@@ -31,7 +31,9 @@ sequelize db:seed:all
 ```
 npm start
 ```
+
 ---
+
 # Documentation
 
 ## Register
@@ -135,7 +137,7 @@ GET https://wdt-rest-api.herokuapp.com/api/posts/:id
 Mengedit post yang sudah ada
 #### Request:
 ```http
-PUT|PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
+PUT PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
 ```
 #### Credentials:
 ```json
@@ -190,7 +192,7 @@ GET https://wdt-rest-api.herokuapp.com/api/comments/:id
 Mengedit Comment yang sudah ada
 #### Request:
 ```http
-PUT|PATCH https://wdt-rest-api.herokuapp.com/api/comments/:id
+PUT/PATCH https://wdt-rest-api.herokuapp.com/api/comments/:id
 ```
 #### Credentials:
 ```json
