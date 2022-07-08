@@ -8,7 +8,7 @@ cd wdt-test
 npm install
 ```
 
-* Ubah config database PostgreSQL sesuai dengan database di komputer kita
+* Ubah config database sesuai dengan database di komputer kita
 ```json
 "development": {
     "username": "blog-test",
@@ -30,4 +30,69 @@ sequelize db:seed:all
 * Jalankan project dengan npm
 ```
 npm start
+```
+
+
+# Documentation
+
+## Register
+Daftarkan akun sebelum melakukan login
+**Request:**
+```http
+POST https://wdt-rest-api.herokuapp.com/api/register
+```
+**Credentials:**
+```json
+{
+    "name": "Your name",
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+```
+
+## Login
+Login untuk mendapatkan token yang akan digunakan di header `Authorization` saat request yang membutuhkan authentication
+**Request:**
+```http
+POST https://wdt-rest-api.herokuapp.com/api/login
+```
+**Credentials:**
+```json
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+```
+
+## Request Reset Password
+Request link reset password
+**Request:**
+```http
+POST https://wdt-rest-api.herokuapp.com/api/reset-password
+```
+**Credentials:**
+```json
+{
+    "email": "email@gmail.com"
+}
+```
+
+## Reset Password
+Reset password dari link yang di dapat
+**Request:**
+```http
+POST https://wdt-rest-api.herokuapp.com/api/reset-password/:id/:passId
+```
+**Credentials:**
+```json
+{
+    "password": "123456789"
+}
+```
+
+## Profile
+Mendapatkan informasi akun kita
+**Request:**
+```http
+GET https://wdt-rest-api.herokuapp.com/api/profile
 ```
