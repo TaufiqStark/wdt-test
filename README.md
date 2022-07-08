@@ -40,7 +40,7 @@ npm start
 Daftarkan akun sebelum melakukan login
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/register
+POST /api/register
 ```
 #### Credentials:
 ```json
@@ -55,7 +55,7 @@ POST https://wdt-rest-api.herokuapp.com/api/register
 Login untuk mendapatkan token yang akan digunakan di header `Authorization` saat request yang membutuhkan authentication
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/login
+POST /api/login
 ```
 #### Credentials:
 ```json
@@ -69,7 +69,7 @@ POST https://wdt-rest-api.herokuapp.com/api/login
 Request link reset password
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/reset-password
+POST /api/reset-password
 ```
 #### Credentials:
 ```json
@@ -82,7 +82,7 @@ POST https://wdt-rest-api.herokuapp.com/api/reset-password
 Reset password dari link yang di dapat
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/reset-password/:id/:passId
+POST /api/reset-password/:id/:passId
 ```
 #### Credentials:
 ```json
@@ -95,14 +95,14 @@ POST https://wdt-rest-api.herokuapp.com/api/reset-password/:id/:passId
 Mendapatkan informasi akun kita
 #### Request:
 ```http
-GET https://wdt-rest-api.herokuapp.com/api/profile
+GET /api/profile
 ```
 
 ## Get Posts
 Mendapatkan posts yang telah dibuat user
 #### Request:
 ```http
-GET https://wdt-rest-api.herokuapp.com/api/posts
+GET /api/posts
 ```
 #### Params:
 ```json
@@ -116,7 +116,7 @@ GET https://wdt-rest-api.herokuapp.com/api/posts
 Membuat post baru 
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/posts
+POST /api/posts
 ```
 #### Credentials:
 ```json
@@ -130,14 +130,14 @@ POST https://wdt-rest-api.herokuapp.com/api/posts
 Melihat detail post
 #### Request:
 ```http
-GET https://wdt-rest-api.herokuapp.com/api/posts/:id
+GET /api/posts/:id
 ```
 
 ## Edit Post
 Mengedit post yang sudah ada
 #### Request:
 ```http
-PUT PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
+PUT PATCH /api/posts/:id
 ```
 #### Credentials:
 ```json
@@ -152,14 +152,14 @@ PUT PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
 Menghapus post
 #### Request:
 ```http
-DELETE https://wdt-rest-api.herokuapp.com/api/posts/:id
+DELETE /api/posts/:id
 ```
 
 ## Get Comment
 Mendapatkan Comment dari sebuah post
 #### Request:
 ```http
-GET https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
+GET /api/posts/:postId/comments
 ```
 #### Params:
 ```json
@@ -173,7 +173,7 @@ GET https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
 Membuat Comment baru pada sebuah post
 #### Request:
 ```http
-POST https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
+POST /api/posts/:postId/comments
 ```
 #### Credentials:
 ```json
@@ -185,14 +185,14 @@ POST https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
 Melihat detail Comment
 #### Request:
 ```http
-GET https://wdt-rest-api.herokuapp.com/api/comments/:id
+GET /api/comments/:id
 ```
 
 ## Edit Comment
 Mengedit Comment yang sudah ada
 #### Request:
 ```http
-PUT/PATCH https://wdt-rest-api.herokuapp.com/api/comments/:id
+PUT PATCH /api/comments/:id
 ```
 #### Credentials:
 ```json
@@ -205,5 +205,10 @@ PUT/PATCH https://wdt-rest-api.herokuapp.com/api/comments/:id
 Menghapus Comment
 #### Request:
 ```http
-DELETE https://wdt-rest-api.herokuapp.com/api/comments/:id
+DELETE /api/comments/:id
 ```
+
+---
+
+### Heroku Deploy
+Link: `https://wdt-rest-api.herokuapp.com`
