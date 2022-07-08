@@ -15,6 +15,9 @@ module.exports = {
             case 404:
                 status = 'Not Found'
                 break;
+            case 422:
+                status = 'Unprocessable'
+                break;
             case 500:
                 status = 'Internal Server Error'
                 break;
