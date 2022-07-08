@@ -102,6 +102,13 @@ Mendapatkan posts yang telah dibuat user
 ```http
 GET https://wdt-rest-api.herokuapp.com/api/posts
 ```
+#### Params:
+```json
+{
+    "page": 1,
+    "limit": 5
+}
+```
 
 ## Create Post
 Membuat post baru 
@@ -128,7 +135,7 @@ GET https://wdt-rest-api.herokuapp.com/api/posts/:id
 Mengedit post yang sudah ada
 #### Request:
 ```http
-PUT | PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
+PUT|PATCH https://wdt-rest-api.herokuapp.com/api/posts/:id
 ```
 #### Credentials:
 ```json
@@ -144,4 +151,57 @@ Menghapus post
 #### Request:
 ```http
 DELETE https://wdt-rest-api.herokuapp.com/api/posts/:id
+```
+
+## Get Comment
+Mendapatkan Comment dari sebuah post
+#### Request:
+```http
+GET https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
+```
+#### Params:
+```json
+{
+    "page": 1,
+    "limit": 5
+}
+```
+
+## Create Comment
+Membuat Comment baru pada sebuah post
+#### Request:
+```http
+POST https://wdt-rest-api.herokuapp.com/api/posts/:postId/comments
+```
+#### Credentials:
+```json
+{
+    "body": "Comments saya"
+}
+```
+## Show Comment
+Melihat detail Comment
+#### Request:
+```http
+GET https://wdt-rest-api.herokuapp.com/api/comments/:id
+```
+
+## Edit Comment
+Mengedit Comment yang sudah ada
+#### Request:
+```http
+PUT|PATCH https://wdt-rest-api.herokuapp.com/api/comments/:id
+```
+#### Credentials:
+```json
+{
+    "body": "Comments saya diubah"
+}
+```
+
+## Delete Comment
+Menghapus Comment
+#### Request:
+```http
+DELETE https://wdt-rest-api.herokuapp.com/api/comments/:id
 ```
