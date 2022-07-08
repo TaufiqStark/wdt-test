@@ -211,4 +211,8 @@ DELETE /api/comments/:id
 ---
 
 ### Heroku Deploy
-Link: `https://wdt-rest-api.herokuapp.com`
+Link: ```http
+https://wdt-rest-api.herokuapp.com
+``` 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TaufiqStark/wdt-test)
