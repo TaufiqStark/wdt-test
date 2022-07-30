@@ -2,7 +2,7 @@
 Langkah - langkah instal project
 
 * Clone dan install package menggunakan npm
-```
+```sh
 git clone https://github.com/TaufiqStark/wdt-test.git
 cd wdt-test
 npm install
@@ -20,7 +20,7 @@ npm install
 ```
 
 * Migrate dan seed database menggunakan sequelize
-```
+```sh
 sequelize db:migrate
 sequelize db:seed:all
 ```
@@ -28,7 +28,7 @@ sequelize db:seed:all
 * Rename `.env.example` menjadi `.env` dan ubah sesui kebutuhan
 
 * Jalankan project dengan npm
-```
+```sh
 npm start
 ```
 
